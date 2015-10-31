@@ -1,0 +1,28 @@
+ <html ng-app="githubViewer">
+
+ 	<head>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+ 		<script type="text/javascript" src="app.js"></script>
+ 	</head>
+
+ 	<body ng-controller="MainController">	 
+ 		<h2>{{message}}</h2>
+
+	<div><h2>{{error}}</h2></div>
+
+	<form name="searchUser" ng-submit="search(username)">
+		<input type="search" placeholder="Username to find" ng-model="username">
+		<input type="submit" value="Search"> 
+	</form>
+
+ 		<!-- Ng-include için farklı dosyaya taşındı buradaki kısım -->
+ 	<div ng-include src="'file:///C:/Users/Enes/Desktop/Angular%20Time/Directives/ng-include/userdetails.html'" ng-show="user"></div>
+
+ 	</body>
+
+ 	<!--
+		module
+		expressions
+
+ 	-->
+ </html>
